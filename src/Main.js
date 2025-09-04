@@ -1,12 +1,20 @@
 import MainLogo from "./assets/main logo.svg";
 import { NavLink } from "react-router-dom";
 import "./styles/header.css";
+import "./styles/whattodo.css";
 import BackLeft from "./assets/headerBack Left.png";
 import BackRight from "./assets/HeaderBack right.png";
 import BackRightMedia from "./assets/headerbackrightMedia.png";
 import Call from "./assets/call.svg";
 import Discount from "./assets/discount.svg";
 import Recall from "./assets/recall.svg";
+import Rocket from "./assets/rocket.svg";
+import Guarantee from "./assets/guarantee.svg";
+import HotPrice from "./assets/hot-sale.svg";
+import Computer from "./assets/computer.svg";
+import WhatToDoBack from "./assets/whattodorigth.png";
+import Circle from "./assets/circleWhattodo.png";
+import CircleBigger from "./assets/circlebiggerwhattodo.png";
 
 function Main() {
   return (
@@ -44,6 +52,39 @@ function Main() {
         <img src={BackRight} alt="headerBackRight" />
         <img src={BackRightMedia} alt="headerBackRight" id="headerBackMedia" />
       </header>
+      <main>
+        <div></div>
+        <div className="whatToDo">
+          <div>
+            <h1>Что еще мы сделаем для вас?</h1>
+          </div>
+          <div className="whatToDoRight">
+            <div>
+              <img src={Rocket} alt="rocket" />
+              <p>Оперативно приедем за 1 час по Москве и области</p>
+            </div>
+            <div>
+              <img src={Computer} alt="computer" />
+              <p>Решим проблему в тот же день</p>
+            </div>
+            <div>
+              <img src={Guarantee} alt="guarantee" />
+              <p>Оформим фирменную гарантию на 1 год</p>
+            </div>
+            <div>
+              <img src={HotPrice} alt="hot-price" />
+              <p>После ремонта навсегда закрепим 10% скидку!</p>
+            </div>
+            <img
+              src={WhatToDoBack}
+              alt="backgroundimage"
+              className="whatToDoBack"
+            />
+            <img src={Circle} alt="circle" className="circle1" />
+            <img src={CircleBigger} alt="circlebigger" className="circle2" />
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

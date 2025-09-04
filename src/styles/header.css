@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  height: calc(413 / 16 * 1vw);
 }
 
 .header > div {
@@ -102,6 +103,7 @@
   .header {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .header > div {

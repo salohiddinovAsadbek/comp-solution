@@ -1,0 +1,102 @@
+.whatToDo {
+  display: flex;
+  position: relative;
+  height: calc(357 / 16 * 1vw);
+}
+
+.whatToDo > div:first-child h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: calc(40 / 16 * 1vw);
+  line-height: 100%;
+  color: #ffffff;
+  width: calc(500 / 16 * 1vw);
+}
+
+.whatToDo > div:first-child {
+  padding-top: calc(78 / 16 * 1vw);
+  padding-left: calc(100 / 16 * 1vw);
+  height: 100%;
+  background-image: url("../assets/whattodoleft.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whatToDoRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  gap: calc(31 / 16 * 1vw);
+  align-items: center;
+  width: calc(1123 / 16 * 1vw);
+  height: 100%;
+  padding-left: calc(260 / 16 * 1vw);
+  padding-right: calc(100 / 16 * 1vw);
+}
+
+.whatToDoRight div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(16 / 16 * 1vw);
+  width: calc(172 / 16 * 1vw);
+  height: calc(160 / 16 * 1vw);
+  background-color: #fbfbfb;
+  box-shadow: calc(10 / 16 * 1vw) calc(10 / 16 * 1vw) calc(20 / 16 * 1vw) 0px
+    #ffffff40;
+
+  box-shadow: calc(-7 / 16 * 1vw) calc(-7 / 16 * 1vw) calc(20 / 16 * 1vw) 0px
+    #ffffff40;
+  border: none;
+  border-radius: calc(15 / 16 * 1vw);
+  padding-top: calc(16 / 16 * 1vw);
+}
+
+.whatToDoRight div > p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: calc(15 / 16 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #7e6060;
+}
+
+.whatToDoRight img {
+  width: calc(48 / 16 * 1vw);
+  height: calc(48 / 16 * 1vw);
+}
+
+.whatToDoRight > div:nth-child(3) > img {
+  width: calc(59 / 16 * 1vw);
+  height: calc(59 / 16 * 1vw);
+}
+
+.whatToDoBack {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -2;
+}
+
+.circle1 {
+  position: absolute;
+  z-index: -1;
+  top: calc(18 / 16 * 1vw);
+  right: calc(649 / 16 * 1vw);
+  width: calc(123 / 16 * 1vw) !important;
+  height: calc(123 / 16 * 1vw) !important;
+}
+
+.circle2 {
+  position: absolute;
+  top: calc(97 / 16 * 1vw);
+  right: 0;
+  width: calc(246 / 16 * 1vw) !important;
+  height: calc(246 / 16 * 1vw) !important;
+  z-index: -1;
+}
