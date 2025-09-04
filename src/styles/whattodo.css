@@ -100,3 +100,113 @@
   height: calc(246 / 16 * 1vw) !important;
   z-index: -1;
 }
+
+@media only screen and (max-width: 414px) {
+  .whatToDo {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .whatToDo > div:first-child h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: calc(28 / 4.14 * 1vw);
+    line-height: 100%;
+    color: #ffffff;
+    width: calc(347 / 4.14 * 1vw);
+    text-align: center;
+  }
+
+  .whatToDo > div:first-child {
+    width: 100%;
+    padding-top: calc(78 / 4.14 * 1vw);
+    padding-left: calc(25 / 4.14 * 1vw);
+    height: calc(357 / 4.14 * 1vw);
+    background-image: url("../assets/whattodoleftMedia.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .whatToDoRight {
+    position: static;
+    display: flex;
+    gap: calc(31 / 4.14 * 1vw);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    padding-top: calc(80 / 4.14 * 1vw);
+    padding-bottom: calc(80 / 4.14 * 1vw);
+    background-image: url("../assets/whattodorightBackMedia.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: calc(80 / 4.14 * 1vw);
+  }
+
+  .whatToDoRight div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(16 / 4.14 * 1vw);
+    width: calc(172 / 4.14 * 1vw);
+    height: calc(160 / 4.14 * 1vw);
+    border-radius: calc(15 / 4.14 * 1vw);
+    padding-top: calc(16 / 4.14 * 1vw);
+    padding-left: calc(6 / 4.14 * 1vw);
+    padding-right: calc(5 / 4.14 * 1vw);
+  }
+
+  .whatToDoRight div > p {
+    font-size: calc(15 / 4.14 * 1vw);
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  .whatToDoRight > div img {
+    width: calc(48 / 4.14 * 1vw);
+    height: calc(48 / 4.14 * 1vw);
+  }
+
+  .whatToDoRight > img:nth-child(5) {
+    display: none;
+  }
+
+  .whatToDoRight > div:nth-child(3) > img {
+    width: calc(59 / 4.14 * 1vw);
+    height: calc(59 / 4.14 * 1vw);
+  }
+
+  .whatToDoBack {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -2;
+  }
+
+  .circle1 {
+    position: absolute;
+    z-index: 1;
+    top: calc(510 / 4.14 * 1vw);
+    right: calc(330 / 4.14 * 1vw);
+    width: calc(123 / 4.14 * 1vw) !important;
+    display: flex;
+    height: calc(123 / 4.14 * 1vw) !important;
+  }
+
+  .circle2 {
+    position: absolute;
+    top: calc(1089 / 4.14 * 1vw);
+    right: calc(-130 / 4.14 * 1vw);
+    width: calc(246 / 4.14 * 1vw) !important;
+    height: calc(246 / 4.14 * 1vw) !important;
+    z-index: 0;
+  }
+}

@@ -1,0 +1,198 @@
+footer {
+  display: flex;
+  justify-content: end;
+  height: calc(287 / 16 * 1vw);
+  background-image: url("../assets/footerBack.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: calc(223 / 16 * 1vw);
+}
+
+footer > img {
+  position: absolute;
+  top: calc(-153 / 16 * 1vw);
+  left: calc(75 / 16 * 1vw);
+  width: calc(417 / 16 * 1vw);
+  height: calc(399 / 16 * 1vw);
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: calc(50 / 16 * 1vw);
+  padding-bottom: calc(54 / 16 * 1vw);
+  padding-right: calc(100 / 16 * 1vw);
+}
+
+footer form {
+  margin-top: calc(39 / 16 * 1vw);
+  margin-bottom: calc(37 / 16 * 1vw);
+  width: calc(388 / 16 * 1vw);
+  height: calc(48 / 16 * 1vw);
+  border-radius: calc(15 / 16 * 1vw);
+  border: calc(2 / 16 * 1vw) solid#FF9356;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+footer form > input {
+  width: calc(213 / 16 * 1vw);
+  height: 100%;
+  padding: calc(13 / 16 * 1vw) calc(24 / 16 * 1vw);
+  background-color: inherit;
+  border: none;
+  outline: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: calc(18 / 16 * 1vw);
+  line-height: 100%;
+  color: #ececec;
+}
+
+footer form > input::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: calc(18 / 16 * 1vw);
+  line-height: 100%;
+  color: #ececec;
+}
+
+footer form > button {
+  width: calc(190 / 16 * 1vw);
+  height: 100%;
+  background: linear-gradient(257.1deg, #eb4800 1.58%, #ffa64a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-top-right-radius: calc(13 / 16 * 1vw);
+  border-bottom-right-radius: calc(13 / 16 * 1vw);
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: calc(18 / 16 * 1vw);
+  line-height: 100%;
+  color: #ffffff;
+  letter-spacing: 0%;
+}
+
+footer div h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: calc(30 / 16 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+footer > div p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: calc(18 / 16 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 414px) {
+  footer {
+    display: flex;
+    justify-content: end;
+    height: auto;
+    background-image: url("../assets/footerbackmedia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: calc(232 / 4.14 * 1vw);
+    padding-top: calc(278 / 4.14 * 1vw);
+  }
+
+  footer > img {
+    position: absolute;
+    top: calc(-153 / 4.14 * 1vw);
+    left: 0;
+    width: calc(406 / 4.14 * 1vw);
+    height: calc(399 / 4.14 * 1vw);
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: calc(50 / 4.14 * 1vw);
+    padding-bottom: calc(54 / 4.14 * 1vw);
+    padding-left: calc(32 / 4.14 * 1vw);
+  }
+
+  footer form {
+    margin-top: calc(66 / 4.14 * 1vw);
+    margin-bottom: calc(66 / 4.14 * 1vw);
+    width: calc(363 / 4.14 * 1vw);
+    height: auto;
+    border-radius: 0;
+    border: none;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: calc(20 / 4.14 * 1vw);
+    align-items: center;
+  }
+
+  footer form > input {
+    width: 100%;
+    height: calc(60 / 4.14 * 1vw);
+    padding: calc(13 / 4.14 * 1vw) calc(24 / 4.14 * 1vw);
+    background-color: inherit;
+    border: calc(2 / 4.14 * 1vw) solid#FF9356;
+    border-radius: calc(15 / 4.14 * 1vw);
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: calc(18 / 4.14 * 1vw);
+    line-height: 100%;
+    color: #ececec;
+  }
+
+  footer form > input::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: calc(18 / 4.14 * 1vw);
+    line-height: 100%;
+    color: #ececec;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer form > button {
+    width: 100%;
+    height: calc(60 / 4.14 * 1vw);
+    background: linear-gradient(257.1deg, #eb4800 1.58%, #ffa64a 100%);
+    border-radius: calc(15 / 4.14 * 1vw);
+    font-size: calc(18 / 4.14 * 1vw);
+  }
+
+  footer div h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: calc(30 / 4.14 * 1vw);
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  footer > div p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: calc(18 / 4.14 * 1vw);
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    text-align: center;
+  }
+}

@@ -2,6 +2,7 @@ import MainLogo from "./assets/main logo.svg";
 import { NavLink } from "react-router-dom";
 import "./styles/header.css";
 import "./styles/whattodo.css";
+import "./styles/footer.css";
 import BackLeft from "./assets/headerBack Left.png";
 import BackRight from "./assets/HeaderBack right.png";
 import BackRightMedia from "./assets/headerbackrightMedia.png";
@@ -15,6 +16,8 @@ import Computer from "./assets/computer.svg";
 import WhatToDoBack from "./assets/whattodorigth.png";
 import Circle from "./assets/circleWhattodo.png";
 import CircleBigger from "./assets/circlebiggerwhattodo.png";
+import FooterLogo from "./assets/footerLogo.png";
+import Step from "./step";
 
 function Main() {
   return (
@@ -53,7 +56,7 @@ function Main() {
         <img src={BackRightMedia} alt="headerBackRight" id="headerBackMedia" />
       </header>
       <main>
-        <div></div>
+        <Step />
         <div className="whatToDo">
           <div>
             <h1>Что еще мы сделаем для вас?</h1>
@@ -78,13 +81,25 @@ function Main() {
             <img
               src={WhatToDoBack}
               alt="backgroundimage"
-              className="whatToDoBack"
+              className="whatToDoBack
+              "
             />
             <img src={Circle} alt="circle" className="circle1" />
             <img src={CircleBigger} alt="circlebigger" className="circle2" />
           </div>
         </div>
       </main>
+      <footer>
+        <img src={FooterLogo} alt="footerLogo" />
+        <div>
+          <h1>Оставьте свой номер телефона</h1>
+          <form action="">
+            <input type="text" placeholder="Телефон :" />
+            <button>Отправить</button>
+          </form>
+          <p>Наш специалист свяжется с вами уже через 2 минуты</p>
+        </div>
+      </footer>
     </div>
   );
 }
