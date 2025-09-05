@@ -18,8 +18,12 @@ import Circle from "./assets/circleWhattodo.png";
 import CircleBigger from "./assets/circlebiggerwhattodo.png";
 import FooterLogo from "./assets/footerLogo.png";
 import Step from "./step";
+import { useContext, useEffect } from "react";
+import { Mycontext } from "./App";
 
 function Main() {
+  const { whichStep, data } = useContext(Mycontext);
+
   return (
     <div>
       <header className="header">
@@ -56,7 +60,7 @@ function Main() {
         <img src={BackRightMedia} alt="headerBackRight" id="headerBackMedia" />
       </header>
       <main>
-        <Step />
+        <Step information={data[whichStep - 1]} />
         <div className="whatToDo">
           <div>
             <h1>Что еще мы сделаем для вас?</h1>
