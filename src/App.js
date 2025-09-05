@@ -1,6 +1,6 @@
 import Main from "./Main";
 import "./styles/styles.css";
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 export const Mycontext = createContext();
 
@@ -41,8 +41,11 @@ function App() {
       step: 4,
       boxes: ["с 10 до 12", "с 12 до 16", "с 16 до 17", "с 17 до 21"],
     },
-    {},
-    {},
+    {
+      title: "Спасибо за ваши ответы!",
+      step: 5,
+      boxes: [],
+    },
     {},
   ];
 
