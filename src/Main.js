@@ -55,11 +55,21 @@ function Main() {
               <img src={Call} alt="callIcon" loading="lazy" />
               <p>Звонок</p>
             </div>
-            <div>
+            <div
+              onClick={() => {
+                setModalOpen(1);
+                document.body.style.overflow = "hidden";
+              }}
+            >
               <img src={Discount} alt="discountIcon" loading="lazy" />
               <p>Получить скидку</p>
             </div>
-            <div>
+            <div
+              onClick={() => {
+                setModalOpen(2);
+                document.body.style.overflow = "hidden";
+              }}
+            >
               <img src={Recall} alt="recallIcon" loading="lazy" />
               <p>Обратный звонок</p>
             </div>

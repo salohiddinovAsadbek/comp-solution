@@ -8,7 +8,8 @@ import "./styles/step.css";
 import { Mycontext } from "./App";
 
 function Step({ information }) {
-  const { setData, whichStep, data, setWhichStep } = useContext(Mycontext);
+  const { setData, whichStep, data, setWhichStep, setModalOpen } =
+    useContext(Mycontext);
   const [positionDot, setPositionDot] = useState("0");
   const [userPhone, setUserPhone] = useState("");
 
@@ -191,7 +192,13 @@ function Step({ information }) {
           </button>
         </div>
 
-        <button className="callStep">
+        <button
+          className="callStep"
+          onClick={() => {
+            setModalOpen(2);
+            document.body.style.overflow = "hidden";
+          }}
+        >
           <p>Заказать обратный звонок</p>
           <img src={CallStep} alt="callStepIcon" loading="lazy" />
         </button>
