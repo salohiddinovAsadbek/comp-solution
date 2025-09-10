@@ -22,7 +22,7 @@ import { useContext, useState } from "react";
 import { Mycontext } from "./App";
 
 function Main() {
-  const { whichStep, data, setModalOpen, isModalOpen } = useContext(Mycontext);
+  const { whichStep, data, setModalOpen } = useContext(Mycontext);
   const [userPhone, setUserPhone] = useState();
 
   function UserPhone(number) {
