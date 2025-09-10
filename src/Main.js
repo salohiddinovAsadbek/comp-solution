@@ -64,7 +64,9 @@ function Main() {
               <p>Обратный звонок</p>
             </div>
           </div>
-          <button className="startHeaderBtn">Начать</button>
+          <button className="startHeaderBtn" onClick={() => {}}>
+            Начать
+          </button>
           <p className="discountDescription">
             Оставить заявку на <NavLink> &nbsp; скидку 25%</NavLink>
           </p>
