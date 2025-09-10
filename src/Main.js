@@ -22,7 +22,7 @@ import { useContext, useState } from "react";
 import { Mycontext } from "./App";
 
 function Main() {
-  const { whichStep, data } = useContext(Mycontext);
+  const { whichStep, data, setModalOpen, isModalOpen } = useContext(Mycontext);
   const [userPhone, setUserPhone] = useState();
 
   function UserPhone(number) {
@@ -64,7 +64,14 @@ function Main() {
               <p>Обратный звонок</p>
             </div>
           </div>
-          <button className="startHeaderBtn" onClick={() => {}}>
+          <button
+            className="startHeaderBtn"
+            onClick={() => {
+              setModalOpen(1);
+              console.log("ishladi");
+              document.body.style.overflow = "hidden";
+            }}
+          >
             Начать
           </button>
           <p className="discountDescription">

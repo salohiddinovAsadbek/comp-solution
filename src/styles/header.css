@@ -28,6 +28,7 @@
   color: #ffffff;
   margin-top: calc(33 / 16 * 1vw);
   margin-bottom: calc(18 / 16 * 1vw);
+  width: calc(513 / 16 * 1vw);
 }
 
 .header > div > p:nth-child(3) {

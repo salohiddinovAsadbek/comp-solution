@@ -1,4 +1,5 @@
 import Main from "./Main";
+import Modal from "./modal";
 import "./styles/styles.css";
 import { createContext, useState } from "react";
 
@@ -51,12 +52,22 @@ function App() {
 
   const [whichStep, setWhichStep] = useState(1);
   const [data, setData] = useState(alldata);
+  const [isModalOpen, setModalOpen] = useState(0);
 
   return (
     <Mycontext.Provider
-      value={{ alldata, whichStep, setWhichStep, setData, data }}
+      value={{
+        alldata,
+        whichStep,
+        setWhichStep,
+        setData,
+        data,
+        isModalOpen,
+        setModalOpen,
+      }}
     >
       <Main />
+      {isModalOpen !== 0 ? <Modal /> : ""}
     </Mycontext.Provider>
   );
 }
